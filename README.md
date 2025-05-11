@@ -10,10 +10,10 @@ Its purpose is to recognise 433 MHz signals from a Friedland (NOVA) wireless PIR
 
 <img src="images/ard.jpg" alt="Ard_tx"/>
 
-This is how an IQ Group receever looks - When the correct 433 MHz signal is received, it can switch mains power on/off via its own interanl relay (e.g. to a floodlight)
+This is how an IQ Group receiver device looks like. When the correct 433 MHz signal is received, it can switch mains power on/off via its own interanl relay (e.g. to a floodlight)
 
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
-This is how a Friedland (NOVA) Wireless PIR looks like. Note that the signals transmitted by these wireless PIR sensors are not compatible with the IQ Group Receiver. This is why a "translator" device as implemented by the use if a PICO W with cheap RX and TX modules is useful. 
+This is how a Friedland (NOVA) Wireless PIR looks like. Note that the signals transmitted by these wireless PIR sensors are not compatible with the IQ Group Receiver. This is why a "433 MHz translator" device is useful, as implemented by a PICO W device programmed with this software connectred to a cheap pair of 433 MHz RX and TX modules. 
 
 <img src="images/Friedland_PIR_and_box.jpg" alt="Friedland NOVA Wireless PIR sensor"/>
