@@ -14,7 +14,7 @@ N.B. There are 2 programs - one is for a combined 433 MHz RX and TX device, the 
 
 <img src="images/ard.jpg" alt="Ard_tx"/>
 
-This is what an IQ Group receiver device looks like. When the correct 433 MHz signal is received, it can switch mains power on/off via its own internal relay (e.g. to enable mains electricy to power a floodlight)
+This is what an IQ Group receiver device looks like. When the correct 433 MHz signal is received, it can switch mains power on/off via its own internal relay (e.g. to switch mains electricity to a floodlight)
 
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
