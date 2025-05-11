@@ -14,10 +14,14 @@ N.B. There are 2 programs - one is for a combined 433 MHz RX and TX device, the 
 
 <img src="images/ard.jpg" alt="Ard_tx"/>
 
-This is how an IQ Group receiver device looks like. When the correct 433 MHz signal is received, it can switch mains power on/off via its own interanl relay (e.g. to a floodlight)
+This is what an IQ Group receiver device looks like. When the correct 433 MHz signal is received, it can switch mains power on/off via its own internal relay (e.g. to enable mains electricy to power a floodlight)
 
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
-This is how a Friedland (NOVA) Wireless PIR looks like. Note that the signals transmitted by these wireless PIR sensors are not compatible with the IQ Group Receiver. This is why a "433 MHz translator" device is useful, as implemented by a PICO W device programmed with this software connectred to a cheap pair of 433 MHz RX and TX modules. 
+This is what Friedland (NOVA) Wireless PIR devices look like. Note that the signal transmitted by one of these wireless PIR sensors isn't compatible with the signals expected by the IQ Group Receiver. This is why a "433 MHz translator" device is useful, such as implemented by a PICO W device programmed with this software connected to a cheap pair of 433 MHz RX and TX modules. 
 
 <img src="images/Friedland_PIR_and_box.jpg" alt="Friedland NOVA Wireless PIR sensor"/>
+
+If you know how to sniff for 433 MHz signals, it should be reasonably easy to adapt this code to cater for other brands of wireless PIR sensors.
+
+Have fun!
