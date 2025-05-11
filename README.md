@@ -15,3 +15,5 @@ This is how an IQ Group receever looks - When the correct 433 MHz signal is rece
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
 This is how a Friedland (NOVA) Wireless PIR looks like. Note that the signals transmitted by these wireless PIR sensors are not compatible with the IQ Group Receiver. This is why a "translator" device as implemented by the use if a PICO W with cheap RX and TX modules is useful. 
+
+<img src="images/Friedland_PIR_and_box.jpg" alt="Friedland NOVA Wireless PIR sensor"/>
