@@ -1,7 +1,7 @@
-# IQ_Group_with_Nova_PIR
+# IQ_Group_with_Friedland_PIR
 This code is to be used in the Arduino IDE for programming a Raspberry Pi Pico W. 
 
-Its purpose is to recognise 433 MHz signals from a NOVA wireless PIR device, and then transmit a separate 433 MHz signal to trigger a IQ Group Receiver - Please note the following: 
+Its purpose is to recognise 433 MHz signals from a Friedland (NOVA) wireless PIR device, and then transmit a separate 433 MHz signal to trigger a IQ Group Receiver - Please note the following: 
  - A pair of cheap 433mHz RX and TX modules is utilised (as pictured below). 
  - The Arduino IDE is used
  - The setup of the Arduino IDE for programming a PICO W is documented here https://randomnerdtutorials.com/programming-raspberry-pi-pico-w-arduino-ide/
@@ -14,4 +14,4 @@ This is how an IQ Group receever looks - When the correct 433 MHz signal is rece
 
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
-This is how a NOVA Wireless PIR looks like. Note that the signals transmitted by these wireless PIR sensors are not compatible with the IQ Group Receiver. This is why the "translator" device as described here, is needed.   
+This is how a Friedland (NOVA) Wireless PIR looks like. Note that the signals transmitted by these wireless PIR sensors are not compatible with the IQ Group Receiver. This is why a "translator" device as implemented by the use if a PICO W with cheap RX and TX modules is useful. 
