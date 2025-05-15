@@ -40,7 +40,7 @@ Please note the following:
  - The Arduino IDE is used
  - The setup of the Arduino IDE for programming a PICO W is documented here https://randomnerdtutorials.com/programming-raspberry-pi-pico-w-arduino-ide/
  - This repro uses a Raspberry PICO W instead of an Arduino UNO, because when the two are compared, the PICO W is faster, smaller, cheaper and has Wifi capability
- - A pair of cheap 433mHz RX and TX modules is utilised (as pictured below).
+ - A pair of cheap 433mHz RX and TX modules is utilised (as pictured above).
  - An LDR and 10K resistor is used for Dark detection (if not used, the device will just work)
  - You can find setup info for the IQ Group receiver here  https://github.com/CurlyWurly-1/IQ-group-pir-wireless-arduino-TX
 
