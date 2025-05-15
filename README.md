@@ -1,6 +1,6 @@
 # IQ_Group_with_Friedland_PIR
 
-The purpose of this repro is to enable a device to receive and recognise specific 433 MHz signals, and then transmit another specific 433 MHz signal that a IQ Group Receiver device can recognise.
+The purpose of this repro is to enable a "433 MHz translator" device that can receive and recognise specific 433 MHz signals, and then transmit another specific 433 MHz signal that a IQ Group Receiver device can recognise.
 
 Unfortunately, whilst the IQ Group receiver device can still be purchased, the necessary PIR sensor devices are no longer made. This repro enables other makes of Wireless PIR devices to be "paired" with the IQ Group Receiver.    
 
