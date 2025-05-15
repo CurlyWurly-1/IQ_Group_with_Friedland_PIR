@@ -6,7 +6,7 @@ Unfortunately, whilst the IQ Group receiver device can still be purchased, the n
 
 N.B. There are 2 programs
  - A combined 433 MHz RX and TX device as described above. Note that a PICO can be used for this because no WiFi is needed
- - A alternative version of the code. Instead of sending a 433 MHz signal, a MQTT message is sent instead. Note that a PICO W is definately needed here and only the RX module is required. With this version, you would have to create an additional device (not described here) which would accept an MQTT signal and then transmit a 433 MHz TX signal. N.B. This version was tested and works well with the MQTT server in Home assistant. When I get time, I'll add the code for this 3rd "MQTT->TX" device to complete this repro.   
+ - A alternative version of the code. Instead of sending a 433 MHz signal, a MQTT message is sent instead. Note that a PICO W is definately needed here, and it only needs to be interfaced with RX module. With this version, you would have to create an additional device (not described here) which would accept an MQTT signal and then transmit a 433 MHz TX signal. N.B. This version was tested and works well with the MQTT server in Home assistant. When I get time, I'll add the code for this 3rd "MQTT->TX" device to complete this repro.   
 
 Please note the following: 
  - The Arduino IDE is used
