@@ -10,8 +10,6 @@ N.B. There are 2 programs in this repro at the moment. _(When I get time, I'll a
 
 N.B. Consider that to get the IQ Group receiver to trigger with the 2nd program above ("RX->MQTT"), you would have to create an additional "MQTT->TX" device to complete the signal path (not described here yet). This additional "MQTT->TX" device would need to listen for a triggering MQTT signal from your WiFi network, and then transmit the required 433 MHz TX signal via a TX module to the IQ Group receiver. Whilst this approach is more complicated, the use of "RX->MQTT" device(s) and a "MQTT->TX" device with "Home Assistant" does open up more possiblities on how to control the IQ group Receiver e.g. Via voice processing capability within "Home Assistant"? (but that is beyond the scope of this repro).
 
-To complete this repro.
-
 Please note the following: 
  - The Arduino IDE is used
  - The setup of the Arduino IDE for programming a PICO W is documented here https://randomnerdtutorials.com/programming-raspberry-pi-pico-w-arduino-ide/
@@ -19,7 +17,6 @@ Please note the following:
  - A pair of cheap 433mHz RX and TX modules is utilised (as pictured below).
  - An LDR and 10K resistor is used for Dark detection (if not used, the device will just work)
  - You can find setup info for the IQ Group receiver here  https://github.com/CurlyWurly-1/IQ-group-pir-wireless-arduino-TX
-
 
 This is what an IQ Group receiver device looks like. When a recognised 433 MHz signal is received, it can switch mains power on/off via its own internal relay (e.g. to switch mains electricity to a floodlight)
 
