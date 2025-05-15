@@ -25,15 +25,14 @@ This picture shows what Friedland (NOVA) Wireless PIR devices look like. Note th
 This picture shows the parts of the "433 MHz translator" device that need to be connected together - PICO W and cheap 433 MHz RX/TX modules   
 <img src="images/ard.jpg" alt="Ard_tx"/>
 
-
 # Description of program code   
-N.B. There are 2 programs in this repro at the moment. _(When I get time, I'll add the 3rd code for the "MQTT->TX" device)_
- - "RX->TX" device - This is for a combined 433 MHz RX and TX device as described above. Note that a PICO can be used for this. Whilst no WiFi is needed, both the RX and TX modules are used. 
- - "RX->MQTT" device - This is for a 433 MHz RX and MQTT sending (via WiFi network) device. Note that a PICO W is definately needed here and only the RX module is used. I used this version with the MQTT server in "Home assistant" (running on a separate Raspberry Pi server in my network) so I could easily see a log of MQTT triggering in the "Home Assistant" MQTT logs.
+There are 3 programs in this repro. The first is standalone, in that only one PICO W is needed to make the system work. 
 
-N.B. Consider that to get the IQ Group receiver to trigger with the 2nd program above ("RX->MQTT"), you would have to create an additional "MQTT->TX" device to complete the signal path (not described here yet). This additional "MQTT->TX" device would need to listen for a triggering MQTT signal from your WiFi network, and then transmit the required 433 MHz TX signal via a TX module to the IQ Group receiver. 
+The 2nd and 3rd programs need to be used together where one PICO W will be executing the "RX->MQTT" code while a second PICO W will be executing the "MQTT->TX" code. Admittedly, the addition of MQTT makes things a bit more complicated _(i.e. Instead of one "433 MHz translator" device, there are now 3 parts  - The "RX->MQTT" device(s), the "Home Assistant" MQTT server and the "MQTT->TX" device)_, but the MQTT approach does also open up more possiblities on how to control the IQ group receiver e.g. Via voice processing capability within "Home Assistant"? (but that is beyond the scope of this repro).
+ - Program 1 - "RX->TX" device -   This is for a combined 433 MHz RX and TX device as described above. Note that a "non WiFi" PICO could be used for this. As no WiFi is needed, both the RX and TX modules are used to complete the signal path from PIR to IQ Group Receiver. 
+ - Program 2 - "RX->MQTT" device - This is for a 433 MHz RX and MQTT sending (via WiFi network) device. Note that a PICO W is definately needed here and only the RX module is used. I used this version with the MQTT server in "Home assistant" (running on a separate Raspberry Pi server in my network) so I could easily see a log of MQTT triggering in the "Home Assistant" MQTT logs.
+ - Program 3 - "MQTT->TX" device - This listens for a triggering MQTT signal (PICO_433/TRIGGER/433MHZ) via your WiFi network. If this topic is sent by the MQTT server, the device that is programmed with this code will recognise it and it will trigger it to transmit the required 433 MHz TX signal via a TX module to the IQ Group receiver. 
 
-Admittedly, the approach of using MQTT is more complicated, i.e. There are 3 parts to the "433 MHz translator" (The "RX->MQTT" device(s), the "Home Assistant" MQTT server and the "MQTT->TX" device), the approach also opens up more possiblities on how to control the IQ group receiver e.g. Via voice processing capability within "Home Assistant"? (but that is beyond the scope of this repro).
 
 # Helpfull hints   
 Please note the following: 
