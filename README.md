@@ -2,7 +2,7 @@
 
 The purpose of this repro is to enable a "433 MHz translator" device that can receive and recognise specific 433 MHz signals, and then transmit another specific 433 MHz signal that a IQ Group Receiver device can recognise.
 
-Unfortunately, whilst the IQ Group receiver device can still be purchased, the necessary PIR sensor devices are no longer made. 
+Unfortunately, the PIR sensor devices are no longer made and over time, they do degrade (e.g. moisture damage). However, the IQ Group receiver devices do come up on E8ay every now and then. A few years back, I bought a few BIN IQ Group recievers for £8 each (Bargain!) 
 
 This repro enables another make of Wireless PIR device to be paired with an IQ Group Receiver, and this has saved me having to change my already installed IQ Group receiver - which for many years has worked well for my needs for general outside lighting.  
 
@@ -11,7 +11,7 @@ The purpose of the system for my scenario, is to enable the detection of movemen
 
 The system is comprised of the following three components    
 
-### Component 1 - Receiver
+### Component 1 - IQ Group Receiver (Friedland)
 This picture shows what an IQ Group receiver device looks like. When a recognised 433 MHz signal is received, it can switch mains power on/off via its own internal relay (e.g. to switch mains electricity to a floodlight)
 
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
