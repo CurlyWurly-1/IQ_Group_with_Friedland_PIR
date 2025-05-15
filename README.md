@@ -34,7 +34,7 @@ The 2nd and 3rd programs need to be used together where one PICO W will be execu
  - Program 3 - "MQTT->TX" device - This is for a MQTT listening device on your WiFi network that will transmit the required 433 MHz TX signal (via a TX module) to the IQ Group receiver when topic "PICO_433/TRIGGER/433MHZ" has been received from a MQTT server (e.g. like the MQTT server in "Home Assistant").  
 
 
-# Helpfull hints   
+# Helpful hints   
 Please note the following: 
  - The Arduino IDE is used
  - The setup of the Arduino IDE for programming a PICO W is documented here https://randomnerdtutorials.com/programming-raspberry-pi-pico-w-arduino-ide/
