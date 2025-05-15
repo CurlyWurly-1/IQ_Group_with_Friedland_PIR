@@ -4,9 +4,13 @@ The purpose of this repro is to enable a device to receive and recognise specifi
 
 Unfortunately, whilst the IQ Group receiver device can still be purchased, the necessary PIR sensor devices are no longer made. This repro enables other makes of Wireless PIR devices to be "paired" with the IQ Group Receiver.    
 
-N.B. There are 2 programs
- - A combined 433 MHz RX and TX device as described above. Note that a PICO can be used for this because no WiFi is needed
- - A alternative version of the code. Instead of sending a 433 MHz signal, a MQTT message is sent instead. Note that a PICO W is definately needed here, and it only needs to be interfaced with RX module. With this version, you would have to create an additional device (not described here) which would accept an MQTT signal and then transmit a 433 MHz TX signal. N.B. This version was tested and works well with the MQTT server in Home assistant. When I get time, I'll add the code for this 3rd "MQTT->TX" device to complete this repro.   
+N.B. There are 2 programs in this repro at the moment. _(When I get time, I'll add the 3rd code for the "MQTT->TX" device)_
+ - "RX->TX" device - This is for a combined 433 MHz RX and TX device as described above. Note that a PICO can be used for this. Whilst no WiFi is needed, both the RX and TX modules are used. 
+ - "RX->MQTT" device - This is for a 433 MHz RX and MQTT sending (via WiFi network) device. Note that a PICO W is definately needed here and only the RX module is used. I used this version with the MQTT server in "Home assistant" (running on a separate Raspberry Pi server in my network) so I could easily see a log of MQTT triggering in the "Home Assistant" MQTT logs.
+
+N.B. Consider that to get the IQ Group receiver to trigger with the 2nd program above ("RX->MQTT"), you would have to create an additional "MQTT->TX" device to complete the signal path (not described here yet). This additional "MQTT->TX" device would need to listen for a triggering MQTT signal from your WiFi network, and then transmit the required 433 MHz TX signal via a TX module to the IQ Group receiver. Whilst this approach is more complicated, the use of "RX->MQTT" device(s) and a "MQTT->TX" device with "Home Assistant" does open up more possiblities on how to control the IQ group Reciever e.g. Via voice processing capability within "Home Assistant"? (but that is beyond the scope of this repro).
+
+To complete this repro.
 
 Please note the following: 
  - The Arduino IDE is used
