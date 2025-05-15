@@ -12,7 +12,7 @@ The purpose of the system for my scenario, is to enable the detection of movemen
 The system is comprised of the following three components    
 
 ### Component 1 - Receiver
-This picure shows what an IQ Group receiver device looks like. When a recognised 433 MHz signal is received, it can switch mains power on/off via its own internal relay (e.g. to switch mains electricity to a floodlight)
+This picture shows what an IQ Group receiver device looks like. When a recognised 433 MHz signal is received, it can switch mains power on/off via its own internal relay (e.g. to switch mains electricity to a floodlight)
 
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
