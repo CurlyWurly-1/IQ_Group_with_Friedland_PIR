@@ -6,7 +6,7 @@ The purpose of this repro is to enable the creation of a "433 MHz translator" de
 
 By enabling other makes of Wireless PIR sensor device to be used, these IQ group receiver devices can be made to work again. This has saved me having to change my already installed IQ Group receiver, which for many years has worked really well for my general outside lighting needs. 
 
-Even today, you can still buy the IQ Group receiver devices cheaply from E8ay; a few years back, I bought some brand new IQ Group recievers for £8 each (Bargain!). The NOVA PIR devices that are used in this repro were also £8 from Amaz0n. 
+Even today, you can still buy the IQ Group receiver devices cheaply from E8ay; a few years back, I bought some brand new IQ Group receivers for £8 each (Bargain!). The NOVA PIR devices that are used in this repro were also £8 from Amaz0n. 
 
 N.B. Also included in this repro, are 2 other programs that are useful if you want to use MQTT techniques instead.
 
