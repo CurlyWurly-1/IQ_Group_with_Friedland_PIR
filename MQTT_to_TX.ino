@@ -29,7 +29,8 @@ const char* mqtt_topic  = "PICO_433/TRIGGER/433MHZ";
 unsigned int GV_ignoreTime = 30000;
 
 // This is the Friedland PIR alarm pulse train (N.B. This pattern goes forward!!)
-int GT_CodeTX[] = {12,21,730,1,1,1,1,1,1,1,4,1,3,1,6,1,5,1,7,1,5,1,3,1,6,1,3,1,8,1,3,1,5,1,5,1,5,1,5,1,4,1,5,1,35};
+//int GT_CodeTX[] = {12,21,730,1,1,1,1,1,1,1,4,1,3,1,6,1,5,1,7,1,5,1,3,1,6,1,3,1,8,1,3,1,5,1,5,1,5,1,5,1,4,1,5,1,35};
+int GT_CodeTX[] = {15,21,800,1,1,1,1,1,1,1,4,1,3,1,6,1,5,1,7,1,5,1,3,1,6,1,3,1,8,1,3,1,5,1,5,1,5,1,5,1,4,1,5,1,40};
 
 unsigned long GV_lastTxTime;     //
 const char*   GV_lastTxText = "";
