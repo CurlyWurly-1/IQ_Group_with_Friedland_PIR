@@ -10,12 +10,13 @@ _Click on the image to show the PDF manual._
 
 Unfortunately, the PIR motion detector devices are no longer being made. and over time, they do break down. The damage is usually caused from extreme weather (rain/moisture ingress) or maybe a forgotten battery has leaked acid etc. Once broken, these PIR motion detectors cannot easily be repaired, so if replacement sensors are unavailable, the associated IQ Group receiver can never trigger. 
 
-Consider it is quite normal for different makes of wirefree PIR motion detector to send their own particular pattern of 433 MHz signal. This means that you can't usually pair a different make of PIR motion detector with the IQ group receiver - The 433 MHz pulse pattern from the PIR motion detector is just not recognised as being a valid pattern that the receiver expects, and so it is ignored. Practically speaking, this is a real shame because the IQ group receiver device be can sited _outside_, which is a good thing to help RF signals being received from an _outside_ based PIR motion detector. 
-
-Sadly, there doesn't seem to be similar systems on the market today. More specifically, a system which has an _outside_ receiver that can switch mains electricity. 
+Sadly, there doesn't seem to be many similar systems on the market today. More specifically, a system which has an _outside_ receiver that can switch mains electricity. 
 
 You can still buy the IQ Group receiver devices cheaply from E8ay today. A few years back, I bought some brand new IQ Group receivers for £8 each (Bargain!). But of course, they are useless if you can't get the PIR motion detectors :(
 
+Whilst it is quite normal for different makes of wirefree PIR motion detector to send their own particular pattern of 433 MHz signal, this also means that you can't usually pair a different make of PIR motion detector with the IQ group receiver - The 433 MHz pulse pattern from your "different make" PIR motion detector is just not recognised as being a valid pattern that the IQ Group receiver expects, and so that pattern is ignored. 
+
+Practically speaking, this is a real shame because the IQ group receiver device be can sited _outside_, which is a good thing to help RF signals being received from an _outside_ based PIR motion detector. 
 In this repro, I have used a Friedland "NOVA" PIR motion detector (shown below). I purchased these from Amaz0n recently for £8. If you wanted to, you could potentially adapt the code to work with any other make of PIR motion detector - The code is reasonably documented 
 
 # Purpose and system components
