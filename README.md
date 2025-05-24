@@ -19,7 +19,7 @@ You can still buy the IQ Group receiver devices cheaply from E8ay today. A few y
 In this repro, I have used a Friedland "NOVA" PIR device (shown below). I purchased these from Amaz0n recently for £8. If you wanted to, you could potentially adapt the code to work with any other make of PIR device - The code is reasonably documented 
 
 # Purpose and system components
-The purpose of the system for my scenario, is to enable the detection at ground level of movement at night, in various areas of my garden. Once movement has been detected, a powerful mains powered floodlight shines over all of the garden. Whilst there is no need for the PIR devices to be wired up, the receiver is of course mains electrictiy powered - The internal relay has to turn on a high powered floodlight after all. 
+The purpose of the system for my scenario, is to enable movement detection at night, in various areas of my garden at ground level. Once movement has been detected, a powerful mains powered floodlight placed up high on a wall shines over all of the garden. Whilst there is no need for the PIR devices to be wired up, the receiver is of course mains electricity powered - The internal relay has to turn on a high powered floodlight after all. 
 
 The purpose of this repro is to enable the creation of a "433 MHz translator" device (or devices) that can receive and recognise specific 433 MHz signals (as transmitted by another make of wireless PIR sensors), and then transmit the specific 433 MHz signal that a IQ Group Receiver device can recognise. 
 
