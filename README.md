@@ -1,17 +1,29 @@
 # Background
 
-Unfortunately, the IQ Group PIR sensor devices which are supposed to be paired with an IQ Group (Friedland) receiver device are no longer made. Over time, these IQ Group PIR sensor devices do break down - Its usually rain/moisture damage, and once broken, they cannot easily be repaired. 
+The picture below is of an IQ group wireless PIR sensor.
 
-The purpose of this repro is to enable the creation of a "433 MHz translator" device (or devices) that can receive and recognise specific 433 MHz signals (as transmitted by other makes of wireless PIR sensors), and then transmit the specific 433 MHz signal that a IQ Group Receiver device can recognise. 
+<img src="images/PIR.jpg" alt="Battery powered IQ Group wireless PIR sensor"/>
 
-By enabling other makes of Wireless PIR sensor device to be used, these IQ group receiver devices can be made to work again. This has saved me having to change my already installed IQ Group receiver, which for many years has worked really well for my general outside lighting needs. 
+Unfortuntely, these PIR devices are no longer being made and over time, they do break down. The damage is usually caused from extreme weather (rain/moisture ingress) or maybe a forgotten battery has leaked acid etc. 
 
-Even today, you can still buy the IQ Group receiver devices cheaply from E8ay; a few years back, I bought some brand new IQ Group receivers for £8 each (Bargain!). The NOVA PIR devices that are used in this repro were also £8 from Amaz0n. 
+Once broken, these PIR sensors cannot easily be repaired, so if replacement sensors are unavailable, the associated IQ Group receiver can never trigger. 
 
-N.B. Also included in this repro, are 2 other programs that are useful if you want to use MQTT techniques instead.
+Consider it is quite normal for different makes of wireless PIR sensor to send their own particular pattern of 433 MHz signal. This means that you can't usually pair a different make of PIR device with the IG group receiver - The 433 MHz pulse pattern from the PIR device is just not recognised as being a valid pattern that the receiver expects, and so it is ignored. Practically speaking, this is a real shame because the IQ group receiver device be can sited _outside_, which is a good thing to help RF signals being received from an _outside_ based PIR device. 
+
+Sadly, there doesn't seem to be similar systems on the market today. More specifically, a system which has an _outside_ receiver that can switch mains electricity. 
+
+You can still buy the IQ Group receiver devices cheaply from E8ay today. A few years back, I bought some brand new IQ Group receivers for £8 each (Bargain!). But of course, they are useless if you can't get the PIR sensors :(
+
+In this repro, I have used a Friedland "NOVA" PIR device (shown below). I purchased these from Amaz0n recently for £8. If you wanted to, you could potentially adapt the code to work with any other make of PIR device - The code is reasonably documented 
 
 # Purpose and system components
 The purpose of the system for my scenario, is to enable the detection of movement to trigger a mains powered floodlight without the need for wired PIR devices.
+
+The purpose of this repro is to enable the creation of a "433 MHz translator" device (or devices) that can receive and recognise specific 433 MHz signals (as transmitted by another make of wireless PIR sensors), and then transmit the specific 433 MHz signal that a IQ Group Receiver device can recognise. 
+
+By enabling another make of Wireless PIR sensor device to be used, these IQ group receiver devices can be made to work again. Using this approach, I have saved myself from having to change my already installed IQ Group receiver, which for many years has worked really well for my general outside lighting needs. 
+
+N.B. Also included in this repro, are 2 other programs that are useful if you want to use MQTT techniques instead.
 
 The system is comprised of the following three components    
 
