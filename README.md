@@ -10,7 +10,7 @@ Unfortuntely, these PIR devices are no longer being made and over time, they do 
 
 Once broken, these PIR sensors cannot easily be repaired, so if replacement sensors are unavailable, the associated IQ Group receiver can never trigger. 
 
-Consider it is quite normal for different makes of wireless PIR sensor to send their own particular pattern of 433 MHz signal. This means that you can't usually pair a different make of PIR device with the IG group receiver - The 433 MHz pulse pattern from the PIR device is just not recognised as being a valid pattern that the receiver expects, and so it is ignored. Practically speaking, this is a real shame because the IQ group receiver device be can sited _outside_, which is a good thing to help RF signals being received from an _outside_ based PIR device. 
+Consider it is quite normal for different makes of wireless PIR sensor to send their own particular pattern of 433 MHz signal. This means that you can't usually pair a different make of PIR device with the IQ group receiver - The 433 MHz pulse pattern from the PIR device is just not recognised as being a valid pattern that the receiver expects, and so it is ignored. Practically speaking, this is a real shame because the IQ group receiver device be can sited _outside_, which is a good thing to help RF signals being received from an _outside_ based PIR device. 
 
 Sadly, there doesn't seem to be similar systems on the market today. More specifically, a system which has an _outside_ receiver that can switch mains electricity. 
 
