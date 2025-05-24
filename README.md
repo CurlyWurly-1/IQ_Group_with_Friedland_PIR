@@ -19,7 +19,7 @@ You can still buy the IQ Group receiver devices cheaply from E8ay today. A few y
 In this repro, I have used a Friedland "NOVA" PIR device (shown below). I purchased these from Amaz0n recently for £8. If you wanted to, you could potentially adapt the code to work with any other make of PIR device - The code is reasonably documented 
 
 # Purpose and system components
-The purpose of the system for my scenario, is to enable the detection of movement to trigger a mains powered floodlight without the need for wired PIR devices.
+The purpose of the system for my scenario, is to enable the detection at ground level of movement at night, in various areas of my garden. Once movement has been detected, a powerful mains powered floodlight shines over all of the garden. Whilst there is no need for the PIR devices to be wired up, the receiver is of course mains electrictiy powered - The internal relay has to turn on a high powered floodlight after all. 
 
 The purpose of this repro is to enable the creation of a "433 MHz translator" device (or devices) that can receive and recognise specific 433 MHz signals (as transmitted by another make of wireless PIR sensors), and then transmit the specific 433 MHz signal that a IQ Group Receiver device can recognise. 
 
@@ -44,7 +44,9 @@ This picture shows the parts of the "433 MHz translator" device that need to be 
 <img src="images/ard.jpg" alt="Ard_tx"/>
 
 # Description of program code   
-There are 3 programs in this repro. The first is standalone, in that only one PICO W is needed to make the system work. 
+There are 3 programs in this repro. 
+
+The first is standalone, in that only one PICO is needed to make the system work. 
 
 The 2nd and 3rd programs (which have "MQTT" in the program name) need to be used together where one PICO W will be executing the "RX->MQTT" code while a second PICO W will be executing the "MQTT->TX" code. Admittedly, the addition of MQTT makes things a bit more complicated _(i.e. Instead of one "433 MHz translator" device, there are now 3 parts  - The "RX->MQTT" device(s), the "Home Assistant" MQTT server and the "MQTT->TX" device)_, but the MQTT approach does also open up more possiblities on how to control the IQ group receiver e.g. Via voice processing capability within "Home Assistant"? (but that is beyond the scope of this repro). 
 
