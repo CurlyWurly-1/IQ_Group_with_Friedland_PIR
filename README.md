@@ -10,17 +10,16 @@ _Click on the image to show the PDF manual._
 
 Unfortunately, the PIR motion detector devices are no longer being made. and over time, they do break down. The damage is usually caused from extreme weather (rain/moisture ingress) or maybe a forgotten battery has leaked acid etc. Once broken, these PIR motion detectors cannot easily be repaired, so if replacement sensors are unavailable, the associated IQ Group receiver can never trigger. 
 
-Sadly, there doesn't seem to be many similar systems on the market today. More specifically, a system which has an _outside_ receiver that can switch mains electricity. 
+Sadly, there doesn't seem to be many similar systems on the market today. More specifically, any system which has an _outside_ receiver that can switch mains electricity. This is a real shame as it really helps if you can set up unblocked "line of sight" between PIR sensors and the receiver. If the receiver is sited inside, then the RF signals are weakened if they have to travel through walls and windows etc. 
 
 You can still buy the IQ Group receiver devices cheaply from E8ay today. A few years back, I bought some brand new IQ Group receivers for £8 each (Bargain!). But of course, they are useless if you can't get the PIR motion detectors :(
 
 Whilst it is quite normal for different makes of wirefree PIR motion detector to send their own particular pattern of 433 MHz signal, this also means that you can't usually pair a different make of PIR motion detector with the IQ group receiver - The 433 MHz pulse pattern from your "different make" PIR motion detector is just not recognised as being a valid pattern that the IQ Group receiver expects, and so that pattern is ignored. 
 
-Practically speaking, this is a real shame because the IQ group receiver device be can sited _outside_, which is a good thing to help RF signals being received from an _outside_ based PIR motion detector. 
 In this repro, I have used a Friedland "NOVA" PIR motion detector (shown below). I purchased these from Amaz0n recently for £8. If you wanted to, you could potentially adapt the code to work with any other make of PIR motion detector - The code is reasonably documented 
 
 # Purpose and system components
-The purpose of the system for my scenario, is to enable movement detection (at night) in various areas of my garden at ground level. Once movement has been detected, a powerful mains powered floodlight placed high up on a wall (where the receiver is) shines over all of the garden. Whilst there is no need for the PIR motion detectors to be wired up, the receiver is of course mains electricity powered - Its internal relay has to turn on a high powered floodlight after all. 
+The purpose of the system for my scenario, is to enable movement detection (at night) in various areas of a large garden at ground level. Once movement has been detected, a powerful mains powered floodlight placed high up on a wall (where the receiver is) shines over all of the garden. Whilst there is no need for the PIR motion detectors to be wired up, the receiver is of course mains electricity powered - Its internal relay has to turn on a high powered floodlight after all. 
 
 The purpose of this repro is to enable the creation of a "433 MHz translator" device (or devices) that can receive and recognise specific 433 MHz signals (as transmitted by another make of wirefree PIR motion detectors), and then transmit the specific 433 MHz signal that a IQ Group Receiver device can recognise. 
 
