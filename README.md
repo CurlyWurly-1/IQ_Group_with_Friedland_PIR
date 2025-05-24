@@ -1,6 +1,6 @@
 # Background
 
-The picture below is of an IQ group wireless PIR sensor. Click on the image to show the PDF manual.
+The picture below is of an IQ group wireless PIR sensor. _Click on the image to show the PDF manual._
 
 <a href="images/PIR_documentation.pdf">
    <img src="images/PIR.jpg" alt="Battery powered IQ Group wireless PIR sensor" - CLICK to show PDF manual />
