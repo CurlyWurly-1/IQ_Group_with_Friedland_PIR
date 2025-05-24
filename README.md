@@ -3,7 +3,7 @@
 The picture below is of an IQ group wireless PIR sensor. _Click on the image to show the PDF manual._
 
 <a href="images/PIR_documentation.pdf">
-   <img src="images/PIR.jpg" alt="Battery powered IQ Group wireless PIR sensor" - CLICK to show PDF manual />
+   <img src="images/PIR_and_receiver.jpg" alt="Battery powered IQ Group wireless PIR sensor" - CLICK to show PDF manual />
 </a>
 
 Unfortuntely, these PIR devices are no longer being made and over time, they do break down. The damage is usually caused from extreme weather (rain/moisture ingress) or maybe a forgotten battery has leaked acid etc. 
