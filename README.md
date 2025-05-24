@@ -1,29 +1,29 @@
 # Background
 
-The picture below is of an IQ group wireless PIR sensor. _Click on the image to show the PDF manual._
+The picture below shows both an IQ group wirefree PIR motion detector and its associated mains powered IQ Group wirefree Receiver. 
+
+_Click on the image to show the PDF manual._
 
 <a href="images/PIR_documentation.pdf">
-   <img src="images/PIR_and_receiver.jpg" alt="Battery powered IQ Group wireless PIR sensor" - CLICK to show PDF manual />
+   <img src="images/PIR_and_receiver.jpg" alt="Battery powered IQ Group wirefree PIR motion detector" - CLICK to show PDF manual />
 </a>
 
-Unfortuntely, these PIR devices are no longer being made and over time, they do break down. The damage is usually caused from extreme weather (rain/moisture ingress) or maybe a forgotten battery has leaked acid etc. 
+Unfortunately, the PIR motion detector devices are no longer being made. and over time, they do break down. The damage is usually caused from extreme weather (rain/moisture ingress) or maybe a forgotten battery has leaked acid etc. Once broken, these PIR motion detectors cannot easily be repaired, so if replacement sensors are unavailable, the associated IQ Group receiver can never trigger. 
 
-Once broken, these PIR sensors cannot easily be repaired, so if replacement sensors are unavailable, the associated IQ Group receiver can never trigger. 
-
-Consider it is quite normal for different makes of wireless PIR sensor to send their own particular pattern of 433 MHz signal. This means that you can't usually pair a different make of PIR device with the IQ group receiver - The 433 MHz pulse pattern from the PIR device is just not recognised as being a valid pattern that the receiver expects, and so it is ignored. Practically speaking, this is a real shame because the IQ group receiver device be can sited _outside_, which is a good thing to help RF signals being received from an _outside_ based PIR device. 
+Consider it is quite normal for different makes of wirefree PIR motion detector to send their own particular pattern of 433 MHz signal. This means that you can't usually pair a different make of PIR motion detector with the IQ group receiver - The 433 MHz pulse pattern from the PIR motion detector is just not recognised as being a valid pattern that the receiver expects, and so it is ignored. Practically speaking, this is a real shame because the IQ group receiver device be can sited _outside_, which is a good thing to help RF signals being received from an _outside_ based PIR motion detector. 
 
 Sadly, there doesn't seem to be similar systems on the market today. More specifically, a system which has an _outside_ receiver that can switch mains electricity. 
 
-You can still buy the IQ Group receiver devices cheaply from E8ay today. A few years back, I bought some brand new IQ Group receivers for £8 each (Bargain!). But of course, they are useless if you can't get the PIR sensors :(
+You can still buy the IQ Group receiver devices cheaply from E8ay today. A few years back, I bought some brand new IQ Group receivers for £8 each (Bargain!). But of course, they are useless if you can't get the PIR motion detectors :(
 
-In this repro, I have used a Friedland "NOVA" PIR device (shown below). I purchased these from Amaz0n recently for £8. If you wanted to, you could potentially adapt the code to work with any other make of PIR device - The code is reasonably documented 
+In this repro, I have used a Friedland "NOVA" PIR motion detector (shown below). I purchased these from Amaz0n recently for £8. If you wanted to, you could potentially adapt the code to work with any other make of PIR motion detector - The code is reasonably documented 
 
 # Purpose and system components
-The purpose of the system for my scenario, is to enable movement detection at night, in various areas of my garden at ground level. Once movement has been detected, a powerful mains powered floodlight placed up high on a wall shines over all of the garden. Whilst there is no need for the PIR devices to be wired up, the receiver is of course mains electricity powered - The internal relay has to turn on a high powered floodlight after all. 
+The purpose of the system for my scenario, is to enable movement detection at night, in various areas of my garden at ground level. Once movement has been detected, a powerful mains powered floodlight placed up high on a wall shines over all of the garden. Whilst there is no need for the PIR motion detectors to be wired up, the receiver is of course mains electricity powered - The internal relay has to turn on a high powered floodlight after all. 
 
-The purpose of this repro is to enable the creation of a "433 MHz translator" device (or devices) that can receive and recognise specific 433 MHz signals (as transmitted by another make of wireless PIR sensors), and then transmit the specific 433 MHz signal that a IQ Group Receiver device can recognise. 
+The purpose of this repro is to enable the creation of a "433 MHz translator" device (or devices) that can receive and recognise specific 433 MHz signals (as transmitted by another make of wirefree PIR motion detectors), and then transmit the specific 433 MHz signal that a IQ Group Receiver device can recognise. 
 
-By enabling another make of Wireless PIR sensor device to be used, these IQ group receiver devices can be made to work again. Using this approach, I have saved myself from having to change my already installed IQ Group receiver, which for many years has worked really well for my general outside lighting needs. 
+By enabling another make of wirefree PIR motion detector device to be used, these IQ group receiver devices can be made to work again. Using this approach, I have saved myself from having to change my already installed IQ Group receiver, which for many years has worked really well for my general outside lighting needs. 
 
 N.B. Also included in this repro, are 2 other programs that are useful if you want to use MQTT techniques instead.
 
@@ -34,10 +34,10 @@ This picture shows what an IQ Group receiver device looks like. When a recognise
 
 <img src="images/P1140936.jpg" alt="IQ Group 240V Mains controller"/>
 
-### Component 2 - Wireless PIR devices
-This picture shows what Friedland (NOVA) Wireless PIR devices look like. Note that the signal transmitted by one of these wireless PIR sensors isn't compatible with the signals expected by the IQ Group Receiver. This is why a "433 MHz translator" device is useful, such as implemented by a PICO W device programmed with this software connected to a cheap pair of 433 MHz RX and TX modules. 
+### Component 2 - wirefree PIR motion detectors
+This picture shows what Friedland (NOVA) wirefree PIR motion detectors look like. Note that the signal transmitted by one of these wirefree PIR motion detectors isn't compatible with the signals expected by the IQ Group Receiver. This is why a "433 MHz translator" device is useful, such as implemented by a PICO W device programmed with this software connected to a cheap pair of 433 MHz RX and TX modules. 
 
-<img src="images/Friedland_PIR_and_box.jpg" alt="Friedland NOVA Wireless PIR sensor"/>
+<img src="images/Friedland_PIR_and_box.jpg" alt="Friedland NOVA wirefree PIR motion detector"/>
 
 ### Component 3 -  "433 MHz translator" device
 This picture shows the parts of the "433 MHz translator" device that need to be connected together - PICO W and cheap 433 MHz RX/TX modules   
@@ -63,8 +63,8 @@ Please note the following:
  - This repro uses a Raspberry PICO W instead of an Arduino UNO, because when the two are compared, the PICO W is faster, smaller, cheaper and has Wifi capability
  - A pair of cheap 433mHz RX and TX modules is utilised (as pictured above).
  - An LDR and 10K resistor is used for Dark detection (if not used, the device will just work)
- - You can find setup info for the IQ Group receiver here  https://github.com/CurlyWurly-1/IQ-group-pir-wireless-arduino-TX
+ - You can find setup info for the IQ Group receiver here  https://github.com/CurlyWurly-1/IQ-group-pir-wirefree-arduino-TX
 
-If you know how to sniff for 433 MHz signals, it should be reasonably easy to adapt this code to cater for other brands of wireless PIR sensors.
+If you know how to sniff for 433 MHz signals, it should be reasonably easy to adapt this code to cater for other brands of wirefree PIR motion detectors.
 
 Have fun!
